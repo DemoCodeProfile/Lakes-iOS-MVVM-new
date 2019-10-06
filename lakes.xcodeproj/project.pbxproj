@@ -1,0 +1,1078 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		786454CE8C946AEFF2DAFCDE /* Pods_lakesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F75967CCA72A12FF7CA04DB /* Pods_lakesTests.framework */; };
+		C33F9EF6452915CD1B9F5FA3 /* Pods_lakes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512195FB3E8078CB194A09EF /* Pods_lakes.framework */; };
+		DD2EDABF2346E6D000B0AC07 /* DIContainerSwinject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2EDABE2346E6D000B0AC07 /* DIContainerSwinject.swift */; };
+		DD3FC65F2349D14400843808 /* AnimationCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3FC65E2349D14400843808 /* AnimationCircle.swift */; };
+		DD5057EA230DA17500142E58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5057E9230DA17500142E58 /* AppDelegate.swift */; };
+		DD5057F1230DA17500142E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5057F0230DA17500142E58 /* Assets.xcassets */; };
+		DD5057F4230DA17500142E58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5057F2230DA17500142E58 /* LaunchScreen.storyboard */; };
+		DD50580E230DA2F500142E58 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50580D230DA2F500142E58 /* UIViewController+Ext.swift */; };
+		DD505817230DA48000142E58 /* LakeDetailsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD505811230DA48000142E58 /* LakeDetailsConfiguration.swift */; };
+		DD505818230DA48000142E58 /* LakeDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD505812230DA48000142E58 /* LakeDetailsRouter.swift */; };
+		DD505819230DA48000142E58 /* LakeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD505813230DA48000142E58 /* LakeDetailsViewController.swift */; };
+		DD50581A230DA48000142E58 /* LakeDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD505814230DA48000142E58 /* LakeDetailsViewModel.swift */; };
+		DD50581B230DA48000142E58 /* LakeDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD505815230DA48000142E58 /* LakeDetailsService.swift */; };
+		DD50581C230DA48000142E58 /* LakeDetailsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD505816230DA48000142E58 /* LakeDetailsProvider.swift */; };
+		DD505820230DA4E300142E58 /* Flowable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50581F230DA4E300142E58 /* Flowable.swift */; };
+		DD505823230DA51700142E58 /* FlowableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD505822230DA51700142E58 /* FlowableViewController.swift */; };
+		DD505825230DA53D00142E58 /* FlowableConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD505824230DA53D00142E58 /* FlowableConfiguration.swift */; };
+		DD50582C230DA5E600142E58 /* MapLakesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD505826230DA5E600142E58 /* MapLakesConfiguration.swift */; };
+		DD50582D230DA5E600142E58 /* MapLakesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD505827230DA5E600142E58 /* MapLakesRouter.swift */; };
+		DD50582E230DA5E600142E58 /* MapLakesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD505828230DA5E600142E58 /* MapLakesViewController.swift */; };
+		DD50582F230DA5E600142E58 /* MapLakesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD505829230DA5E600142E58 /* MapLakesViewModel.swift */; };
+		DD505830230DA5E600142E58 /* MapLakesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50582A230DA5E600142E58 /* MapLakesService.swift */; };
+		DD505831230DA5E600142E58 /* MapLakesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50582B230DA5E600142E58 /* MapLakesProvider.swift */; };
+		DD505834230DA78600142E58 /* SharedSequence+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD505833230DA78600142E58 /* SharedSequence+Ext.swift */; };
+		DD505836230DA7B000142E58 /* Observable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD505835230DA7B000142E58 /* Observable+Ext.swift */; };
+		DD505838230DA82000142E58 /* RxMapViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD505837230DA82000142E58 /* RxMapViewDelegateProxy.swift */; };
+		DD50583D230DAD2E00142E58 /* ImageLoadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50583B230DAD2E00142E58 /* ImageLoadingService.swift */; };
+		DD505844230DADBC00142E58 /* JsonParserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD505843230DADBC00142E58 /* JsonParserService.swift */; };
+		DD505849230DAE3000142E58 /* BaseSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD505848230DAE3000142E58 /* BaseSpecification.swift */; };
+		DD50584C230DAE3B00142E58 /* JsonSpecifiaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50584A230DAE3A00142E58 /* JsonSpecifiaction.swift */; };
+		DD50584D230DAE3B00142E58 /* LakeByIdSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50584B230DAE3A00142E58 /* LakeByIdSpecification.swift */; };
+		DD50584F230DAE4400142E58 /* JsonLakesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD50584E230DAE4400142E58 /* JsonLakesRepository.swift */; };
+		DD505852230DAFC500142E58 /* Lake.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD505851230DAFC500142E58 /* Lake.swift */; };
+		DD505854230DB02900142E58 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD505853230DB02900142E58 /* Data.swift */; };
+		DD7AAB1123487D8200036174 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AAB1023487D8200036174 /* String+Ext.swift */; };
+		DD7AAB132348878300036174 /* RxSwift+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AAB122348878300036174 /* RxSwift+Ext.swift */; };
+		DD7AAB1523489A3900036174 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AAB1423489A3900036174 /* DI.swift */; };
+		DD7AAB182348BA5200036174 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD7AAB1A2348BA5200036174 /* Localizable.strings */; };
+		DD7AAB202348BD0E00036174 /* CLLocationCoordinate2D+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AAB1F2348BD0E00036174 /* CLLocationCoordinate2D+Ext.swift */; };
+		DD7AAB232348DE2000036174 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7AAB222348DE2000036174 /* UIImage+Ext.swift */; };
+		DD922C88234997A0009883EF /* LakeDetailsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD922C87234997A0009883EF /* LakeDetailsViewModelTest.swift */; };
+		DD922C8A234997BD009883EF /* LakeDetailsProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD922C89234997BD009883EF /* LakeDetailsProviderTest.swift */; };
+		DD922C8C234997D7009883EF /* LakeDetailsServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD922C8B234997D7009883EF /* LakeDetailsServiceTest.swift */; };
+		DD922C8F2349A0E3009883EF /* LakeDetailsServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD922C8E2349A0E3009883EF /* LakeDetailsServiceMock.swift */; };
+		DD922C912349A3EE009883EF /* LakeDetailsProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD922C902349A3EE009883EF /* LakeDetailsProviderMock.swift */; };
+		DDD428AE2349B70D00B8078A /* LakesRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD428AD2349B70D00B8078A /* LakesRepositoryMock.swift */; };
+		DDD428B22349B85C00B8078A /* LakeFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD428B12349B85C00B8078A /* LakeFixture.swift */; };
+		DDD428B42349C18D00B8078A /* ImageLoadingServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD428B32349C18D00B8078A /* ImageLoadingServiceMock.swift */; };
+		DDD428B62349C35600B8078A /* MapLakesViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD428B52349C35600B8078A /* MapLakesViewModelTest.swift */; };
+		DDD428BA2349C37B00B8078A /* MapLakesProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD428B92349C37B00B8078A /* MapLakesProviderTest.swift */; };
+		DDD428BD2349C4B100B8078A /* MapLakesServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD428BC2349C4B100B8078A /* MapLakesServiceMock.swift */; };
+		DDD428BF2349C4BB00B8078A /* MapLakesProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD428BE2349C4BB00B8078A /* MapLakesProviderMock.swift */; };
+		DDF04598234857D4006A0DBA /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF04597234857D4006A0DBA /* DIContainer.swift */; };
+		DDF0459B23486A57006A0DBA /* Result+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0459A23486A57006A0DBA /* Result+Ext.swift */; };
+		DDF0459E23487188006A0DBA /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF0459D23487188006A0DBA /* ErrorViewController.swift */; };
+		DDF045A42348757D006A0DBA /* ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF045A02348757D006A0DBA /* ThemeColors.swift */; };
+		DDF045A52348757D006A0DBA /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF045A12348757D006A0DBA /* Theme.swift */; };
+		DDF045A62348757D006A0DBA /* ThemeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF045A22348757D006A0DBA /* ThemeApp.swift */; };
+		DDF045A72348757D006A0DBA /* ThemeFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF045A32348757D006A0DBA /* ThemeFonts.swift */; };
+		DDF045AC23487712006A0DBA /* DefaultTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF045AB23487712006A0DBA /* DefaultTheme.swift */; };
+		DDF045AE23487768006A0DBA /* DefaultThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF045AD23487768006A0DBA /* DefaultThemeColors.swift */; };
+		DDF045B023487773006A0DBA /* DefaultThemeFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF045AF23487773006A0DBA /* DefaultThemeFonts.swift */; };
+		DDF045B2234878CD006A0DBA /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF045B1234878CD006A0DBA /* UIColor+Ext.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD5057FB230DA17500142E58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD5057DE230DA17500142E58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD5057E5230DA17500142E58;
+			remoteInfo = lakes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		35B816147102F1CE04D3D05E /* Pods-lakes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lakes.release.xcconfig"; path = "Target Support Files/Pods-lakes/Pods-lakes.release.xcconfig"; sourceTree = "<group>"; };
+		512195FB3E8078CB194A09EF /* Pods_lakes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lakes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F75967CCA72A12FF7CA04DB /* Pods_lakesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lakesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F5AA8BB4D5A0232719B0FA8 /* Pods-lakesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lakesTests.debug.xcconfig"; path = "Target Support Files/Pods-lakesTests/Pods-lakesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C24E747536C1CBC74B929EE9 /* Pods-lakes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lakes.debug.xcconfig"; path = "Target Support Files/Pods-lakes/Pods-lakes.debug.xcconfig"; sourceTree = "<group>"; };
+		C26C60091937EF89E9057E0B /* Pods-lakesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lakesTests.release.xcconfig"; path = "Target Support Files/Pods-lakesTests/Pods-lakesTests.release.xcconfig"; sourceTree = "<group>"; };
+		DD2EDABE2346E6D000B0AC07 /* DIContainerSwinject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainerSwinject.swift; sourceTree = "<group>"; };
+		DD3FC65E2349D14400843808 /* AnimationCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCircle.swift; sourceTree = "<group>"; };
+		DD5057E6230DA17500142E58 /* Lakes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lakes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD5057E9230DA17500142E58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD5057F0230DA17500142E58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD5057F3230DA17500142E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD5057F5230DA17500142E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD5057FA230DA17500142E58 /* lakesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lakesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD505800230DA17500142E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD50580D230DA2F500142E58 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		DD505811230DA48000142E58 /* LakeDetailsConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LakeDetailsConfiguration.swift; sourceTree = "<group>"; };
+		DD505812230DA48000142E58 /* LakeDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LakeDetailsRouter.swift; sourceTree = "<group>"; };
+		DD505813230DA48000142E58 /* LakeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LakeDetailsViewController.swift; sourceTree = "<group>"; };
+		DD505814230DA48000142E58 /* LakeDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LakeDetailsViewModel.swift; sourceTree = "<group>"; };
+		DD505815230DA48000142E58 /* LakeDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LakeDetailsService.swift; sourceTree = "<group>"; };
+		DD505816230DA48000142E58 /* LakeDetailsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LakeDetailsProvider.swift; sourceTree = "<group>"; };
+		DD50581F230DA4E300142E58 /* Flowable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flowable.swift; sourceTree = "<group>"; };
+		DD505822230DA51700142E58 /* FlowableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowableViewController.swift; sourceTree = "<group>"; };
+		DD505824230DA53D00142E58 /* FlowableConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowableConfiguration.swift; sourceTree = "<group>"; };
+		DD505826230DA5E600142E58 /* MapLakesConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLakesConfiguration.swift; sourceTree = "<group>"; };
+		DD505827230DA5E600142E58 /* MapLakesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLakesRouter.swift; sourceTree = "<group>"; };
+		DD505828230DA5E600142E58 /* MapLakesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLakesViewController.swift; sourceTree = "<group>"; };
+		DD505829230DA5E600142E58 /* MapLakesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLakesViewModel.swift; sourceTree = "<group>"; };
+		DD50582A230DA5E600142E58 /* MapLakesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLakesService.swift; sourceTree = "<group>"; };
+		DD50582B230DA5E600142E58 /* MapLakesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLakesProvider.swift; sourceTree = "<group>"; };
+		DD505833230DA78600142E58 /* SharedSequence+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SharedSequence+Ext.swift"; sourceTree = "<group>"; };
+		DD505835230DA7B000142E58 /* Observable+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Ext.swift"; sourceTree = "<group>"; };
+		DD505837230DA82000142E58 /* RxMapViewDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxMapViewDelegateProxy.swift; sourceTree = "<group>"; };
+		DD50583B230DAD2E00142E58 /* ImageLoadingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoadingService.swift; sourceTree = "<group>"; };
+		DD505843230DADBC00142E58 /* JsonParserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParserService.swift; sourceTree = "<group>"; };
+		DD505848230DAE3000142E58 /* BaseSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSpecification.swift; sourceTree = "<group>"; };
+		DD50584A230DAE3A00142E58 /* JsonSpecifiaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSpecifiaction.swift; sourceTree = "<group>"; };
+		DD50584B230DAE3A00142E58 /* LakeByIdSpecification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LakeByIdSpecification.swift; sourceTree = "<group>"; };
+		DD50584E230DAE4400142E58 /* JsonLakesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonLakesRepository.swift; sourceTree = "<group>"; };
+		DD505851230DAFC500142E58 /* Lake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lake.swift; sourceTree = "<group>"; };
+		DD505853230DB02900142E58 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		DD7AAB1023487D8200036174 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		DD7AAB122348878300036174 /* RxSwift+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RxSwift+Ext.swift"; sourceTree = "<group>"; };
+		DD7AAB1423489A3900036174 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
+		DD7AAB192348BA5200036174 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DD7AAB1B2348BA7E00036174 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		DD7AAB1C2348BA7E00036174 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DD7AAB1E2348BABD00036174 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		DD7AAB1F2348BD0E00036174 /* CLLocationCoordinate2D+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Ext.swift"; sourceTree = "<group>"; };
+		DD7AAB222348DE2000036174 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		DD922C87234997A0009883EF /* LakeDetailsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LakeDetailsViewModelTest.swift; sourceTree = "<group>"; };
+		DD922C89234997BD009883EF /* LakeDetailsProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LakeDetailsProviderTest.swift; sourceTree = "<group>"; };
+		DD922C8B234997D7009883EF /* LakeDetailsServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LakeDetailsServiceTest.swift; sourceTree = "<group>"; };
+		DD922C8E2349A0E3009883EF /* LakeDetailsServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LakeDetailsServiceMock.swift; sourceTree = "<group>"; };
+		DD922C902349A3EE009883EF /* LakeDetailsProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LakeDetailsProviderMock.swift; sourceTree = "<group>"; };
+		DDD428AD2349B70D00B8078A /* LakesRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LakesRepositoryMock.swift; sourceTree = "<group>"; };
+		DDD428B12349B85C00B8078A /* LakeFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LakeFixture.swift; sourceTree = "<group>"; };
+		DDD428B32349C18D00B8078A /* ImageLoadingServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingServiceMock.swift; sourceTree = "<group>"; };
+		DDD428B52349C35600B8078A /* MapLakesViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLakesViewModelTest.swift; sourceTree = "<group>"; };
+		DDD428B92349C37B00B8078A /* MapLakesProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLakesProviderTest.swift; sourceTree = "<group>"; };
+		DDD428BC2349C4B100B8078A /* MapLakesServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLakesServiceMock.swift; sourceTree = "<group>"; };
+		DDD428BE2349C4BB00B8078A /* MapLakesProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLakesProviderMock.swift; sourceTree = "<group>"; };
+		DDF04597234857D4006A0DBA /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		DDF0459A23486A57006A0DBA /* Result+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Ext.swift"; sourceTree = "<group>"; };
+		DDF0459D23487188006A0DBA /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		DDF045A02348757D006A0DBA /* ThemeColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeColors.swift; sourceTree = "<group>"; };
+		DDF045A12348757D006A0DBA /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		DDF045A22348757D006A0DBA /* ThemeApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeApp.swift; sourceTree = "<group>"; };
+		DDF045A32348757D006A0DBA /* ThemeFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeFonts.swift; sourceTree = "<group>"; };
+		DDF045AB23487712006A0DBA /* DefaultTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTheme.swift; sourceTree = "<group>"; };
+		DDF045AD23487768006A0DBA /* DefaultThemeColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultThemeColors.swift; sourceTree = "<group>"; };
+		DDF045AF23487773006A0DBA /* DefaultThemeFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultThemeFonts.swift; sourceTree = "<group>"; };
+		DDF045B1234878CD006A0DBA /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD5057E3230DA17500142E58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C33F9EF6452915CD1B9F5FA3 /* Pods_lakes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5057F7230DA17500142E58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				786454CE8C946AEFF2DAFCDE /* Pods_lakesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D61ECD5934F8EAF387D03FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C24E747536C1CBC74B929EE9 /* Pods-lakes.debug.xcconfig */,
+				35B816147102F1CE04D3D05E /* Pods-lakes.release.xcconfig */,
+				7F5AA8BB4D5A0232719B0FA8 /* Pods-lakesTests.debug.xcconfig */,
+				C26C60091937EF89E9057E0B /* Pods-lakesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BC3ECAB8A30B32B9BEF06DD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				512195FB3E8078CB194A09EF /* Pods_lakes.framework */,
+				6F75967CCA72A12FF7CA04DB /* Pods_lakesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD2EDABD2346E6B400B0AC07 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				DD2EDABE2346E6D000B0AC07 /* DIContainerSwinject.swift */,
+				DDF04597234857D4006A0DBA /* DIContainer.swift */,
+				DD7AAB1423489A3900036174 /* DI.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		DD3FC6602349E42400843808 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				DD3FC65E2349D14400843808 /* AnimationCircle.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		DD5057DD230DA17500142E58 = {
+			isa = PBXGroup;
+			children = (
+				DD5057E8230DA17500142E58 /* lakes */,
+				DD5057FD230DA17500142E58 /* lakesTests */,
+				DD5057E7230DA17500142E58 /* Products */,
+				7D61ECD5934F8EAF387D03FE /* Pods */,
+				BC3ECAB8A30B32B9BEF06DD6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD5057E7230DA17500142E58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD5057E6230DA17500142E58 /* Lakes.app */,
+				DD5057FA230DA17500142E58 /* lakesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD5057E8230DA17500142E58 /* lakes */ = {
+			isa = PBXGroup;
+			children = (
+				DD505809230DA18400142E58 /* App */,
+				DD50580B230DA1A900142E58 /* Resources */,
+			);
+			path = lakes;
+			sourceTree = "<group>";
+		};
+		DD5057FD230DA17500142E58 /* lakesTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDD428AF2349B82300B8078A /* Models */,
+				DD922C842349936A009883EF /* Modules */,
+				DDD428AB2349B6E300B8078A /* Services */,
+				DD505800230DA17500142E58 /* Info.plist */,
+			);
+			path = lakesTests;
+			sourceTree = "<group>";
+		};
+		DD505809230DA18400142E58 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DD50580A230DA18F00142E58 /* Modules */,
+				DD505850230DAFB300142E58 /* Models */,
+				DD50580C230DA1E800142E58 /* Extensions */,
+				DD50581D230DA4B600142E58 /* Helpers */,
+				DD505839230DACE000142E58 /* Services */,
+				DDF0459C2348714F006A0DBA /* UI */,
+				DD5057E9230DA17500142E58 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DD50580A230DA18F00142E58 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DD505810230DA45500142E58 /* MapLakes */,
+				DD50580F230DA43E00142E58 /* LakeDetails */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DD50580B230DA1A900142E58 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD5057F0230DA17500142E58 /* Assets.xcassets */,
+				DD5057F2230DA17500142E58 /* LaunchScreen.storyboard */,
+				DD5057F5230DA17500142E58 /* Info.plist */,
+				DD505853230DB02900142E58 /* Data.swift */,
+				DD7AAB1A2348BA5200036174 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DD50580C230DA1E800142E58 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DD50580D230DA2F500142E58 /* UIViewController+Ext.swift */,
+				DD505833230DA78600142E58 /* SharedSequence+Ext.swift */,
+				DD505835230DA7B000142E58 /* Observable+Ext.swift */,
+				DDF0459A23486A57006A0DBA /* Result+Ext.swift */,
+				DDF045B1234878CD006A0DBA /* UIColor+Ext.swift */,
+				DD7AAB1023487D8200036174 /* String+Ext.swift */,
+				DD7AAB122348878300036174 /* RxSwift+Ext.swift */,
+				DD7AAB1F2348BD0E00036174 /* CLLocationCoordinate2D+Ext.swift */,
+				DD7AAB222348DE2000036174 /* UIImage+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DD50580F230DA43E00142E58 /* LakeDetails */ = {
+			isa = PBXGroup;
+			children = (
+				DD505811230DA48000142E58 /* LakeDetailsConfiguration.swift */,
+				DD505812230DA48000142E58 /* LakeDetailsRouter.swift */,
+				DD505813230DA48000142E58 /* LakeDetailsViewController.swift */,
+				DD505814230DA48000142E58 /* LakeDetailsViewModel.swift */,
+				DD505815230DA48000142E58 /* LakeDetailsService.swift */,
+				DD505816230DA48000142E58 /* LakeDetailsProvider.swift */,
+			);
+			path = LakeDetails;
+			sourceTree = "<group>";
+		};
+		DD505810230DA45500142E58 /* MapLakes */ = {
+			isa = PBXGroup;
+			children = (
+				DD505826230DA5E600142E58 /* MapLakesConfiguration.swift */,
+				DD505827230DA5E600142E58 /* MapLakesRouter.swift */,
+				DD505828230DA5E600142E58 /* MapLakesViewController.swift */,
+				DD505829230DA5E600142E58 /* MapLakesViewModel.swift */,
+				DD50582A230DA5E600142E58 /* MapLakesService.swift */,
+				DD50582B230DA5E600142E58 /* MapLakesProvider.swift */,
+			);
+			path = MapLakes;
+			sourceTree = "<group>";
+		};
+		DD50581D230DA4B600142E58 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DD505832230DA65800142E58 /* DelegateProxy */,
+				DD50581E230DA4C300142E58 /* Flowable */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DD50581E230DA4C300142E58 /* Flowable */ = {
+			isa = PBXGroup;
+			children = (
+				DD50581F230DA4E300142E58 /* Flowable.swift */,
+				DD505822230DA51700142E58 /* FlowableViewController.swift */,
+				DD505824230DA53D00142E58 /* FlowableConfiguration.swift */,
+			);
+			path = Flowable;
+			sourceTree = "<group>";
+		};
+		DD505832230DA65800142E58 /* DelegateProxy */ = {
+			isa = PBXGroup;
+			children = (
+				DD505837230DA82000142E58 /* RxMapViewDelegateProxy.swift */,
+			);
+			path = DelegateProxy;
+			sourceTree = "<group>";
+		};
+		DD505839230DACE000142E58 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DD2EDABD2346E6B400B0AC07 /* Dependencies */,
+				DD505846230DADE500142E58 /* Specifications */,
+				DD505845230DADC000142E58 /* Repositories */,
+				DD505843230DADBC00142E58 /* JsonParserService.swift */,
+				DD50583B230DAD2E00142E58 /* ImageLoadingService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DD505845230DADC000142E58 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DD50584E230DAE4400142E58 /* JsonLakesRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		DD505846230DADE500142E58 /* Specifications */ = {
+			isa = PBXGroup;
+			children = (
+				DD505848230DAE3000142E58 /* BaseSpecification.swift */,
+				DD505847230DAE0700142E58 /* Default */,
+			);
+			path = Specifications;
+			sourceTree = "<group>";
+		};
+		DD505847230DAE0700142E58 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				DD50584A230DAE3A00142E58 /* JsonSpecifiaction.swift */,
+				DD50584B230DAE3A00142E58 /* LakeByIdSpecification.swift */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		DD505850230DAFB300142E58 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD505851230DAFC500142E58 /* Lake.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD922C842349936A009883EF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DD922C862349938A009883EF /* LakeDetails */,
+				DD922C852349937C009883EF /* MapLakes */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DD922C852349937C009883EF /* MapLakes */ = {
+			isa = PBXGroup;
+			children = (
+				DDD428BB2349C4A900B8078A /* Mock */,
+				DDD428B52349C35600B8078A /* MapLakesViewModelTest.swift */,
+				DDD428B92349C37B00B8078A /* MapLakesProviderTest.swift */,
+			);
+			path = MapLakes;
+			sourceTree = "<group>";
+		};
+		DD922C862349938A009883EF /* LakeDetails */ = {
+			isa = PBXGroup;
+			children = (
+				DD922C8D234997E5009883EF /* Mock */,
+				DD922C87234997A0009883EF /* LakeDetailsViewModelTest.swift */,
+				DD922C89234997BD009883EF /* LakeDetailsProviderTest.swift */,
+				DD922C8B234997D7009883EF /* LakeDetailsServiceTest.swift */,
+			);
+			path = LakeDetails;
+			sourceTree = "<group>";
+		};
+		DD922C8D234997E5009883EF /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				DD922C8E2349A0E3009883EF /* LakeDetailsServiceMock.swift */,
+				DD922C902349A3EE009883EF /* LakeDetailsProviderMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		DDD428AB2349B6E300B8078A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DDD428AC2349B6FD00B8078A /* Mock */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DDD428AC2349B6FD00B8078A /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				DDD428AD2349B70D00B8078A /* LakesRepositoryMock.swift */,
+				DDD428B32349C18D00B8078A /* ImageLoadingServiceMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		DDD428AF2349B82300B8078A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDD428B02349B84200B8078A /* Fixture */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDD428B02349B84200B8078A /* Fixture */ = {
+			isa = PBXGroup;
+			children = (
+				DDD428B12349B85C00B8078A /* LakeFixture.swift */,
+			);
+			path = Fixture;
+			sourceTree = "<group>";
+		};
+		DDD428BB2349C4A900B8078A /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				DDD428BC2349C4B100B8078A /* MapLakesServiceMock.swift */,
+				DDD428BE2349C4BB00B8078A /* MapLakesProviderMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		DDF0459C2348714F006A0DBA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DD3FC6602349E42400843808 /* Animations */,
+				DDF0459F23487541006A0DBA /* Theme */,
+				DDF0459D23487188006A0DBA /* ErrorViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DDF0459F23487541006A0DBA /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				DDF045A8234876B5006A0DBA /* DefaultTheme */,
+				DDF045A12348757D006A0DBA /* Theme.swift */,
+				DDF045A22348757D006A0DBA /* ThemeApp.swift */,
+				DDF045A02348757D006A0DBA /* ThemeColors.swift */,
+				DDF045A32348757D006A0DBA /* ThemeFonts.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		DDF045A8234876B5006A0DBA /* DefaultTheme */ = {
+			isa = PBXGroup;
+			children = (
+				DDF045AB23487712006A0DBA /* DefaultTheme.swift */,
+				DDF045AD23487768006A0DBA /* DefaultThemeColors.swift */,
+				DDF045AF23487773006A0DBA /* DefaultThemeFonts.swift */,
+			);
+			path = DefaultTheme;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD5057E5230DA17500142E58 /* lakes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD505803230DA17500142E58 /* Build configuration list for PBXNativeTarget "lakes" */;
+			buildPhases = (
+				7B8A264BCA4E78A3D330978E /* [CP] Check Pods Manifest.lock */,
+				DD5057E2230DA17500142E58 /* Sources */,
+				DD5057E3230DA17500142E58 /* Frameworks */,
+				DD5057E4230DA17500142E58 /* Resources */,
+				BBD0FD06F9837877D55C1BC5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lakes;
+			productName = lakes;
+			productReference = DD5057E6230DA17500142E58 /* Lakes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD5057F9230DA17500142E58 /* lakesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD505806230DA17500142E58 /* Build configuration list for PBXNativeTarget "lakesTests" */;
+			buildPhases = (
+				0E59E27889DAF7BA029A8C5E /* [CP] Check Pods Manifest.lock */,
+				DD5057F6230DA17500142E58 /* Sources */,
+				DD5057F7230DA17500142E58 /* Frameworks */,
+				DD5057F8230DA17500142E58 /* Resources */,
+				527E5FBCE19630E059359A6B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD5057FC230DA17500142E58 /* PBXTargetDependency */,
+			);
+			name = lakesTests;
+			productName = lakesTests;
+			productReference = DD5057FA230DA17500142E58 /* lakesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD5057DE230DA17500142E58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Вадим";
+				TargetAttributes = {
+					DD5057E5230DA17500142E58 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					DD5057F9230DA17500142E58 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = DD5057E5230DA17500142E58;
+					};
+				};
+			};
+			buildConfigurationList = DD5057E1230DA17500142E58 /* Build configuration list for PBXProject "lakes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = DD5057DD230DA17500142E58;
+			productRefGroup = DD5057E7230DA17500142E58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD5057E5230DA17500142E58 /* lakes */,
+				DD5057F9230DA17500142E58 /* lakesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD5057E4230DA17500142E58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5057F4230DA17500142E58 /* LaunchScreen.storyboard in Resources */,
+				DD7AAB182348BA5200036174 /* Localizable.strings in Resources */,
+				DD5057F1230DA17500142E58 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5057F8230DA17500142E58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E59E27889DAF7BA029A8C5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lakesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		527E5FBCE19630E059359A6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lakesTests/Pods-lakesTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lakesTests/Pods-lakesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B8A264BCA4E78A3D330978E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lakes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBD0FD06F9837877D55C1BC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lakes/Pods-lakes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PinLayout/PinLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lakes/Pods-lakes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD5057E2230DA17500142E58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7AAB1523489A3900036174 /* DI.swift in Sources */,
+				DDF045A62348757D006A0DBA /* ThemeApp.swift in Sources */,
+				DD505844230DADBC00142E58 /* JsonParserService.swift in Sources */,
+				DD50581B230DA48000142E58 /* LakeDetailsService.swift in Sources */,
+				DDF0459E23487188006A0DBA /* ErrorViewController.swift in Sources */,
+				DD505849230DAE3000142E58 /* BaseSpecification.swift in Sources */,
+				DD505834230DA78600142E58 /* SharedSequence+Ext.swift in Sources */,
+				DD505820230DA4E300142E58 /* Flowable.swift in Sources */,
+				DD505817230DA48000142E58 /* LakeDetailsConfiguration.swift in Sources */,
+				DD2EDABF2346E6D000B0AC07 /* DIContainerSwinject.swift in Sources */,
+				DDF045A42348757D006A0DBA /* ThemeColors.swift in Sources */,
+				DD50583D230DAD2E00142E58 /* ImageLoadingService.swift in Sources */,
+				DD505854230DB02900142E58 /* Data.swift in Sources */,
+				DD50582D230DA5E600142E58 /* MapLakesRouter.swift in Sources */,
+				DD50582F230DA5E600142E58 /* MapLakesViewModel.swift in Sources */,
+				DD7AAB232348DE2000036174 /* UIImage+Ext.swift in Sources */,
+				DD50581C230DA48000142E58 /* LakeDetailsProvider.swift in Sources */,
+				DD50580E230DA2F500142E58 /* UIViewController+Ext.swift in Sources */,
+				DD505831230DA5E600142E58 /* MapLakesProvider.swift in Sources */,
+				DD50584F230DAE4400142E58 /* JsonLakesRepository.swift in Sources */,
+				DD50581A230DA48000142E58 /* LakeDetailsViewModel.swift in Sources */,
+				DD505818230DA48000142E58 /* LakeDetailsRouter.swift in Sources */,
+				DD50584D230DAE3B00142E58 /* LakeByIdSpecification.swift in Sources */,
+				DD7AAB132348878300036174 /* RxSwift+Ext.swift in Sources */,
+				DD505819230DA48000142E58 /* LakeDetailsViewController.swift in Sources */,
+				DD50582C230DA5E600142E58 /* MapLakesConfiguration.swift in Sources */,
+				DDF045B023487773006A0DBA /* DefaultThemeFonts.swift in Sources */,
+				DD505823230DA51700142E58 /* FlowableViewController.swift in Sources */,
+				DD7AAB1123487D8200036174 /* String+Ext.swift in Sources */,
+				DD505825230DA53D00142E58 /* FlowableConfiguration.swift in Sources */,
+				DDF04598234857D4006A0DBA /* DIContainer.swift in Sources */,
+				DDF045AC23487712006A0DBA /* DefaultTheme.swift in Sources */,
+				DD505838230DA82000142E58 /* RxMapViewDelegateProxy.swift in Sources */,
+				DDF0459B23486A57006A0DBA /* Result+Ext.swift in Sources */,
+				DD50582E230DA5E600142E58 /* MapLakesViewController.swift in Sources */,
+				DD7AAB202348BD0E00036174 /* CLLocationCoordinate2D+Ext.swift in Sources */,
+				DD505836230DA7B000142E58 /* Observable+Ext.swift in Sources */,
+				DDF045AE23487768006A0DBA /* DefaultThemeColors.swift in Sources */,
+				DD505852230DAFC500142E58 /* Lake.swift in Sources */,
+				DD3FC65F2349D14400843808 /* AnimationCircle.swift in Sources */,
+				DD50584C230DAE3B00142E58 /* JsonSpecifiaction.swift in Sources */,
+				DDF045A72348757D006A0DBA /* ThemeFonts.swift in Sources */,
+				DD5057EA230DA17500142E58 /* AppDelegate.swift in Sources */,
+				DDF045B2234878CD006A0DBA /* UIColor+Ext.swift in Sources */,
+				DD505830230DA5E600142E58 /* MapLakesService.swift in Sources */,
+				DDF045A52348757D006A0DBA /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5057F6230DA17500142E58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDD428BF2349C4BB00B8078A /* MapLakesProviderMock.swift in Sources */,
+				DDD428B42349C18D00B8078A /* ImageLoadingServiceMock.swift in Sources */,
+				DDD428B22349B85C00B8078A /* LakeFixture.swift in Sources */,
+				DD922C88234997A0009883EF /* LakeDetailsViewModelTest.swift in Sources */,
+				DD922C8F2349A0E3009883EF /* LakeDetailsServiceMock.swift in Sources */,
+				DD922C8A234997BD009883EF /* LakeDetailsProviderTest.swift in Sources */,
+				DDD428BD2349C4B100B8078A /* MapLakesServiceMock.swift in Sources */,
+				DDD428B62349C35600B8078A /* MapLakesViewModelTest.swift in Sources */,
+				DDD428AE2349B70D00B8078A /* LakesRepositoryMock.swift in Sources */,
+				DD922C912349A3EE009883EF /* LakeDetailsProviderMock.swift in Sources */,
+				DD922C8C234997D7009883EF /* LakeDetailsServiceTest.swift in Sources */,
+				DDD428BA2349C37B00B8078A /* MapLakesProviderTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD5057FC230DA17500142E58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD5057E5230DA17500142E58 /* lakes */;
+			targetProxy = DD5057FB230DA17500142E58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD5057F2230DA17500142E58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD5057F3230DA17500142E58 /* Base */,
+				DD7AAB1B2348BA7E00036174 /* ru */,
+				DD7AAB1E2348BABD00036174 /* en */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DD7AAB1A2348BA5200036174 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD7AAB192348BA5200036174 /* en */,
+				DD7AAB1C2348BA7E00036174 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD505801230DA17500142E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD505802230DA17500142E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD505804230DA17500142E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C24E747536C1CBC74B929EE9 /* Pods-lakes.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/lakes/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vadim.lakes;
+				PRODUCT_NAME = Lakes;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD505805230DA17500142E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35B816147102F1CE04D3D05E /* Pods-lakes.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/lakes/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vadim.lakes;
+				PRODUCT_NAME = Lakes;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD505807230DA17500142E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F5AA8BB4D5A0232719B0FA8 /* Pods-lakesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = lakesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vadim.lakesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lakes.app/Lakes";
+			};
+			name = Debug;
+		};
+		DD505808230DA17500142E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C26C60091937EF89E9057E0B /* Pods-lakesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = lakesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vadim.lakesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lakes.app/Lakes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD5057E1230DA17500142E58 /* Build configuration list for PBXProject "lakes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD505801230DA17500142E58 /* Debug */,
+				DD505802230DA17500142E58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD505803230DA17500142E58 /* Build configuration list for PBXNativeTarget "lakes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD505804230DA17500142E58 /* Debug */,
+				DD505805230DA17500142E58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD505806230DA17500142E58 /* Build configuration list for PBXNativeTarget "lakesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD505807230DA17500142E58 /* Debug */,
+				DD505808230DA17500142E58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD5057DE230DA17500142E58 /* Project object */;
+}
